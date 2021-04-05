@@ -48,6 +48,20 @@ El texto de `El contenido del párrafo será eliminado`, será sustituido en tie
 <p>salva@formador.es</p>
 ```
 
+## Dev Tools
+
+Para empezar a usar devTools, hay que instalar las dependencias necesarias con spring-boot.
+
+```xml
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-devtools</artifactId>
+</dependency>
+```
+
+E instalar el plugin de [livereload para chrome](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei). En Chrome habrá que configurarlo para tenga acceso a localhost y ya funcionará directamente. Si guardas un documento html, se actualizará automáticamente en el navegador sin necesidad de recargarlo manualmente.
+
+
 ## Condicionales IF
 
 Documentar como se hace un if [aquí](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#conditional-evaluation)
