@@ -9,6 +9,6 @@ Se seguirán la siguientes reglas:
 
 | Tema | Enlace |
 |-- | -- |
-| Thymeleaf | pendiente |
+| Thymeleaf | (index.md)[https://github.com/borilio/documentacion-general/blob/main/thymeleaf/index.md] |
 | Angular | pendiente|
 
