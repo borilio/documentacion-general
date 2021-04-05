@@ -50,8 +50,9 @@ El texto de `El contenido del párrafo será eliminado`, será sustituido en tie
 
 ## Condicionales IF
 
-Documentar como se hace un if [aquí](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#iteration)
+Documentar como se hace un if [aquí](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#conditional-evaluation)
 
 ## Bucles FOR
 
-Documentar como se hace un forEach [aquí](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#conditional-evaluation)
+Documentar como se hace un forEach [aquí](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#iteration)
+
