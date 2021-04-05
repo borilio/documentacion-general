@@ -1,7 +1,7 @@
 # Thymeleaf
 
 Thymeleaf es un moderno motor de plantillas Java del lado del servidor para entornos web e independientes.
-La documentación oficial la podemos encontrar en https://www.thymeleaf.org.
+La documentación oficial la podemos encontrar en https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html.
 
 ## Empezando a usarlo
 
@@ -50,8 +50,8 @@ El texto de `El contenido del párrafo será eliminado`, será sustituido en tie
 
 ## Condicionales IF
 
-Documentar como se hace un if
+Documentar como se hace un if [aquí](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#iteration)
 
 ## Bucles FOR
 
-Documentar como se hace un forEach
+Documentar como se hace un forEach [aquí](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#conditional-evaluation)
