@@ -7,8 +7,8 @@ Se seguirán la siguientes reglas:
 
 ## Índice de temas
 
--------------
 | Tema | Enlace |
--------------
+|-- | -- |
 | Thymeleaf | pendiente |
----------------
+| Angular | pendiente|
+
