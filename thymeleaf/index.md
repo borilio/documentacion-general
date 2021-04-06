@@ -62,7 +62,22 @@ Para empezar a usar devTools, hay que instalar las dependencias necesarias con s
 E instalar el plugin de [livereload para chrome](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei). En Chrome habrá que configurarlo para tenga acceso a localhost y ya funcionará directamente. Si guardas un documento html, se actualizará automáticamente en el navegador sin necesidad de recargarlo manualmente.
 
 
-## Condicionales IF
+## Condicionales IF y UNLESS
+
+También se pueden hacer uso de condicionales con ``th:if``. Un ejemplo con if ternario:
+
+```html
+<span th:if="${edad > 18} ? 'Mayor de edad' : 'Menor de edad'"></span>
+```
+
+Con ``th:unless`` es simplemente lo contrario. Si no se cumple dicha condición, se muestra el interior.
+
+```html
+<a th:unless="${!edad < 18}" href="www.hbo.com">HBO</a>
+```
+No obstante, la lógica queda un poco extraña y bastante confusa (especialmente para aquellos que se fijan de primeras en la condición), ya que es como decir "si no es menor de 18, mostrar el interior cumpliéndose lo contrario". 
+
+Teniendo en cuenta estas contras, quizás resulte más conveniente usar ``th:if`` a menos que haya una situación en la que tenga más sentido utilizar ``unless``.
 
 Documentar como se hace un if [aquí](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#conditional-evaluation)
 
