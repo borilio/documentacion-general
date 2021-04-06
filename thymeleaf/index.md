@@ -70,3 +70,7 @@ Documentar como se hace un if [aquí](https://www.thymeleaf.org/doc/tutorials/3.
 
 Documentar como se hace un forEach [aquí](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#iteration)
 
+## Aplicar clases con th:class
+
+Con la `th:class` sirven para blablablaba
+
