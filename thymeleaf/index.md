@@ -64,20 +64,35 @@ E instalar el plugin de [livereload para chrome](https://chrome.google.com/webst
 
 ## Condicionales IF y UNLESS
 
-También se pueden hacer uso de condicionales con ``th:if``. Un ejemplo con if ternario:
+En algunos casos necesitaremos hacer uso de condicionales para que se muestre una opción u otra dependiendo del resultado de dicha condicional.
+Para esto hacemos uso de ``th:if``. 
+He aquí un ejemplo con una variable ``edad`` que vale 25:
 
 ```html
-<p th:text="${edad >= 18} ? 'Es mayor' : 'No es mayor'"></p>
+<p th:if="${edad >= 18}">Eres mayor de edad</p>
+```
+
+El resultado sería de esta forma en la vista de cliente:
+
+```html
+<p>Eres mayor de edad</p>
 ```
 
 Con ``th:unless`` es simplemente lo contrario. Si no se cumple dicha condición, se muestra el interior.
 
+Esto sería como un ``else``.
+
 ```html
 <a th:unless="${edad < 18}" href='www.hbo.com'>HBO</a>
 ```
-No obstante, la lógica queda un poco extraña y bastante confusa (especialmente para aquellos que se fijan de primeras en la condición), ya que es como decir "si no es menor de 18, mostrar el interior cumpliéndose lo contrario". 
 
-Teniendo en cuenta estas contras, quizás resulte más conveniente usar ``th:if`` a menos que haya una situación en la que tenga más sentido utilizar ``unless``.
+Al no ser menor de 18 años, sino que todo lo contrario, no se cumpliría la condición expuesta en el ``unless`` y aparecería lo siguiente en la vista:
+
+```html
+<a href='www.hbo.com'>HBO</a>
+```
+
+Documentar como se hace un if [aquí](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#conditional-evaluation)
 
 ## Bucles FOR
 
