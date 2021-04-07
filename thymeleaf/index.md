@@ -67,7 +67,7 @@ E instalar el plugin de [livereload para chrome](https://chrome.google.com/webst
 También se pueden hacer uso de condicionales con ``th:if``. Un ejemplo con if ternario:
 
 ```html
-<span th:if="${edad > 18} ? 'Mayor de edad' : 'Menor de edad'"></span>
+<p th:text="${edad >= 18} ? 'Es mayor' : 'No es mayor'"></p>
 ```
 
 Con ``th:unless`` es simplemente lo contrario. Si no se cumple dicha condición, se muestra el interior.
