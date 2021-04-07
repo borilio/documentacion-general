@@ -73,13 +73,11 @@ También se pueden hacer uso de condicionales con ``th:if``. Un ejemplo con if t
 Con ``th:unless`` es simplemente lo contrario. Si no se cumple dicha condición, se muestra el interior.
 
 ```html
-<a th:unless="${!edad < 18}" href="www.hbo.com">HBO</a>
+<a th:unless="${edad < 18}" href='www.hbo.com'>HBO</a>
 ```
 No obstante, la lógica queda un poco extraña y bastante confusa (especialmente para aquellos que se fijan de primeras en la condición), ya que es como decir "si no es menor de 18, mostrar el interior cumpliéndose lo contrario". 
 
 Teniendo en cuenta estas contras, quizás resulte más conveniente usar ``th:if`` a menos que haya una situación en la que tenga más sentido utilizar ``unless``.
-
-Documentar como se hace un if [aquí](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#conditional-evaluation)
 
 ## Bucles FOR
 
