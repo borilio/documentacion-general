@@ -91,14 +91,17 @@ Al no ser menor de 18 años, sino que todo lo contrario, no se cumpliría la con
 ```html
 <a href='www.hbo.com'>HBO</a>
 ```
-
-Documentar como se hace un if [aquí](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#conditional-evaluation)
-
 ## Bucles FOR
 
  A veces en nuestro programa necesitamos de una estructura que nos repita(itere) un bloque de código, para eso utilizamos bucles.
 Para iterar a la manera en que lo hace un bucle foreach en la mayoría de los lenguajes sería de la siguiente manera.
 Suponiendo que nos llega por ejemplo una lista de articulos lo iteraremos y mostraremos así:
+
+```java
+//Definimos una colección llamada articulos y la enviamos a la vista
+ArrayList<Articulo> articulos = ...
+model.addAttribute("articulos", articulos);
+```
 
 ```html
 <h1> articulos </h1>
@@ -115,8 +118,10 @@ Suponiendo que nos llega por ejemplo una lista de articulos lo iteraremos y most
 </tr>
 </table>
 ```
-articulo es la variable donde se va introduciendo el resultado de cada iteración de articulos, que es la lista que nos llega.
+
+`articulo` es la variable donde se va introduciendo el resultado de cada iteración de `articulos`, que es la lista que nos llega.
 el resultado que nos mostraría nuestro html en caso de que articulos contenga tres elementos. Es el siguiente:
+
 ```html
 <h1> articulos </h1>
 <table>
