@@ -120,7 +120,7 @@ model.addAttribute("articulos", articulos);
 ```
 
 `articulo` es la variable donde se va introduciendo el resultado de cada iteración de `articulos`, que es la lista que nos llega.
-el resultado que nos mostraría nuestro html en caso de que articulos contenga tres elementos. Es el siguiente:
+El resultado que nos mostraría nuestro html en caso de que articulos contenga tres elementos, sería el siguiente:
 
 ```html
 <h1> articulos </h1>
