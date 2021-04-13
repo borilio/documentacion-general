@@ -96,7 +96,53 @@ Documentar como se hace un if [aquí](https://www.thymeleaf.org/doc/tutorials/3.
 
 ## Bucles FOR
 
-Documentar como se hace un forEach [aquí](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#iteration)
+El bucle forEach [aquí](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#iteration)
+ A veces en nuestro programa necesitamos de una estructura que nos repita(itere) un bloque de código, para eso utilizamos bucles.
+Para iterar a la manera en que lo hace un bucle foreach en la mayoría de los lenguajes sería de la siguiente manera.
+Suponiendo que nos llega por ejemplo la lista articulos lo iteraremos y mostraremos así:
+
+```html
+<h1> articulos </h1>
+<table>
+<tr>
+  <td>nombre</td>
+  <td>descripción</td>
+  <td>precio</td>
+  </tr>
+<tr th:each="articulo : ${articulos}">
+  <td th:text="${articulo.nombre}"></td>
+  <td th:text="${articulo.descripción}"></td>
+  <td th:text="${articulo.precio}"></td>
+</tr>
+</table>
+```
+articulo es la variable donde se va introduciendo el resultado de cada iteración de articulos, que es la lista que nos llega.
+el resultado que nos mostraría nuestro html en caso de que articulos contenga tres elementos. Es el siguiente:
+```html
+<h1> articulos </h1>
+<table>
+<tr>
+  <td>nombre</td>
+  <td>descripción</td>
+  <td>precio</td>
+  </tr>
+<tr>
+  <td>Bombilla</td>
+  <td>Sirve para iluminar es muy potente</td>
+  <td>12</td>
+</tr>
+  <tr>
+  <td>Tornillo</td>
+  <td>De acero inoxidable</td>
+  <td>2</td>
+</tr>
+<tr>
+  <td>Serrucho</td>
+  <td>Para cortar madera</td>
+  <td>36</td>
+</tr>
+</table>
+```
 
 ## Aplicar clases con th:class
 
