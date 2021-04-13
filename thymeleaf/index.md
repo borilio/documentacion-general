@@ -96,10 +96,9 @@ Documentar como se hace un if [aquí](https://www.thymeleaf.org/doc/tutorials/3.
 
 ## Bucles FOR
 
-El bucle forEach [aquí](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#iteration)
  A veces en nuestro programa necesitamos de una estructura que nos repita(itere) un bloque de código, para eso utilizamos bucles.
 Para iterar a la manera en que lo hace un bucle foreach en la mayoría de los lenguajes sería de la siguiente manera.
-Suponiendo que nos llega por ejemplo la lista articulos lo iteraremos y mostraremos así:
+Suponiendo que nos llega por ejemplo una lista de articulos lo iteraremos y mostraremos así:
 
 ```html
 <h1> articulos </h1>
