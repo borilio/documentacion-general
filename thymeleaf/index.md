@@ -150,5 +150,13 @@ El resultado que nos mostraría nuestro html en caso de que articulos contenga t
 
 ## Aplicar clases con th:class
 
-Con la `th:class` sirven para blablablaba
+pendiente de documentar
+  
+## Enlaces con th:href (equivalente a c:url)
+
+pendiente de documentar
+
+## Uso de fragmentos en Thymeleaf (equivalente a jsp:include)
+
+pendiente de documentar
 
