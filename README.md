@@ -10,5 +10,5 @@ Se seguirán la siguientes reglas:
 | Tema | Enlace |
 |-- | -- |
 | Thymeleaf | [index.md](https://github.com/borilio/documentacion-general/blob/main/thymeleaf/index.md) |
-| Angular | pendiente|
+| Angular |   [index.md](https://github.com/borilio/documentacion-general/blob/main/angular/index.md)|
 
