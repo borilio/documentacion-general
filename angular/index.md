@@ -1,8 +1,6 @@
 # Angular
 
-Añadir lo que queráis
-
-## Como referenciar desde codigo un elemento HTML
+## Como referenciar desde codigo un elemento HTML (pendiente de arreglar)
 No todos los datos de html se pueden usar con el "[(ngModel)]" (tambien conocido como banana in a box), 
 en esos casos se tiene tiene que usar el "#" para poder crear un objeto basado en la etiqueta de html.
 Ejemplo
@@ -38,3 +36,15 @@ Esto no se limitaria a inputs claro.
 
  ```
 En este caso, los dos parrafos tendrian el mismo contenido ya que esta cogiendo los datos de un p a otro p
+
+## Arrancar el servidor de desarrollo desde un movil
+
+Si arrancas el servidor de desarrollo, por seguridad no podrás abrir la aplicación desde otra ip que esté en la misma WIFI. No bastará con abrir desde el móvil `http://192.168.1.x:4200`. 
+
+Podemos desactivar esa seguridad con el siguiente comando:
+
+```bash
+ng serve --o --host=0.0.0.0 --disable-host-check
+```
+
+Ahora podrás desde cualquier dispositivo que esté en la misma red, poner la url del servidor y se abrirá la app. Por ejemplo, si tu pc donde estás programando, tiene la ip 192.168.1.64, desde un móvil si vas a la url http://192.168.1.64:4200 se abrirá la app de Angular y podrás ver como funciona directamente en un dispositivo táctil.
