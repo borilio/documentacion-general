@@ -160,3 +160,15 @@ pendiente de documentar
 
 pendiente de documentar
 
+## Añadir librerías con WebJars en Maven
+
+Se pueden añadir librerías comunes como Bootstrap, JQuery, etc, desde Maven y después enlazarlas desde HTML. Esto nos facilitaría la descarga local de la librería completa y posterior enlace. Sería una alternativa a usar un CDN externo.
+
+1. Primero buscamos en https://mvnrepository.com/ la librería que queramos.
+2. Copiamos su trozo de xml y lo pegamos en el pom.xml. Actualizamos maven.
+3. Y ya podemos enlazar desde HTML, usando la etiqueta `th:href`, mirando en las librerías la ruta al archivo externo.
+
+```html
+<link th:rel="stylesheet" th:href="@{webjars/bootstrap/5.1.3/css/bootstrap.min.css} "/>
+```
+
